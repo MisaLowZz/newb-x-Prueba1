@@ -1,16 +1,14 @@
-name = "Newb X Legacy"
-version = [0, 15, 0]
+name = "Newb X Lowres Renewed"
+version = [0, 1, 2]
 min_supported_mc_version = [1, 21, 20]
 description = '''
-§c%w
-§7- An enchanced vanilla shader for Minecraft!
-%v
-§3https://devendrn.github.io/newb-shader/
+To have §bNewb §fX §aLowres §fyou need to have the apk patch §a+1.21.20
+§fShader By §9MisaLowZz
 ''' # %w = patch warning, %v = version
-authors = ["devendrn"]
+authors = ["MisaLowzZ", "devendrn"]
 url = "https://devendrn.github.io/newb-shader/"
-uuid = "95f774cf-4afa-73e7-a21a-72146307b1d2" # Use https://www.uuidgenerator.net/version4
-materials = ["Sky", "LegacyCubemap", "Clouds", "EndSky", "SunMoon", "RenderChunk", "Weather", "Actor"]
+uuid = "323bf99d-aab0-432a-8ec4-fd5329551f58" # Use https://www.uuidgenerator.net/version4
+materials = ["Sky", "LegacyCubemap", "EndSky", "Clouds", "SunMoon", "RenderChunk", "Actor"]
 
 [info] 
 copyright = '''
@@ -25,45 +23,73 @@ credits = '''
 # right-most subpack is enabled by default
 
 [[subpack]]
-define = "ROUNDED_CLOUDS"
+define = "MULTILAYER_CLOUDS"
 materials = ["Clouds"]
 description = '''
-Rounded Clouds
-'''
+Multilayer Clouds
 
-[[subpack]]
-define = "BOX_CLOUDS"
-materials = ["Clouds", "RenderChunk"]
-description = '''
-Box Clouds
+This subpack adds two cloud layers
+§c[Not recommended on low-end devices]§f
 '''
 
 [[subpack]]
 define = "CHUNK_ANIM"
 materials = ["RenderChunk"]
 description = '''
-Chunk loading animation
+Chunk Loading Animation
+
+This subpack enables the chunk loading animation
+§a[Recommended on low-end devices]§f
 '''
 
 [[subpack]]
-define = "NO_WAVE_NO_FOG"
+define = "GROUND_REFLECTION"
 materials = ["RenderChunk"]
 description = '''
-No fog and wave effects
+Ground Reflection
+
+This subpack enables reflection on the ground
+§b[Does not affect performance]§f
 '''
 
 [[subpack]]
-define = "NO_FOG"
+define = "INTENSE_FOG"
 materials = ["RenderChunk"]
 description = '''
-No fog effect
+Intense Fog
+
+This subpack enables strong and dense fog
+§6[Can cause fps drop]§f
 '''
 
 [[subpack]]
 define = "NO_WAVE"
 materials = ["RenderChunk"]
 description = '''
-No wave effects
+No Wave Effects
+
+This subpack disables plant and water movements
+§a[Recommended on low-end devices]§f
+'''
+
+[[subpack]]
+define = "NO_AURORAS"
+materials = ["Clouds"]
+description = '''
+No Auroras
+
+This subpack disables the auroras that are seen at night
+§b[Does not affect performance]§f
+'''
+
+[[subpack]]
+define = "SIMPLE_WATER"
+materials = ["RenderChunk"]
+description = '''
+Simple Water
+
+This subpack enables a simple, flat water design
+§a[Recommended on low-end devices]§f
 '''
 
 [[subpack]]
@@ -71,4 +97,6 @@ define = "DEFAULT"
 materials = []
 description = '''
 Default
+
+Subpack default 
 '''
